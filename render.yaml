@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: telegram-anime-renamer
+    plan: free
+    env: docker
+    buildCommand: ""
+    startCommand: ""
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
